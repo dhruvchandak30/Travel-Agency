@@ -26,6 +26,10 @@ function Login() {
   disableScroll();
 }
 
+function enableScroll() {
+    window.onscroll = function() {};
+}
+
 function Submit_Login() {
   let user = localStorage.getItem("Name");
   let pass = localStorage.getItem("Password");
@@ -40,8 +44,19 @@ function Submit_Login() {
     const p = document.getElementById("login");
     p.remove();
     document.getElementById("Logout").style.display = "block";
+    enableScroll();
   } else {
     document.getElementById("InvalidLogin").innerText =
       "Invalid Login, Try Again";
   }
+}
+
+function Destination_Scroll(){
+  var element = document.getElementById('Destinations');
+var position = element.getBoundingClientRect();
+var x = position.left;
+var y = position.top;
+console.log(x);
+console.log(y);
+scrollTo(x,y);
 }

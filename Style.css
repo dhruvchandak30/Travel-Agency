@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  /* overflow-y: hidden; */
 }
 /* 
   position: fixed;
@@ -51,18 +52,20 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 3;
+  overflow-y: hidden;
 }
 
 .logo {
   margin: 15px 20px 5px 30px;
 }
 .logoImg {
-  width: 120%;
+  /* width: 120%; */
   cursor: pointer;
 }
-#Logo_Button{
-    background-color: transparent;
-    border: none;
+#Logo_Button {
+  background-color: transparent;
+  border: none;
 }
 .menu {
   display: flex;
@@ -71,13 +74,13 @@ nav {
   margin: 10px 50px;
 }
 .menu button {
-    text-decoration: none;
-    border: 1.5px solid black;
-    padding: 4px 10px;
-    background-color: transparent;
-    font-size: 19px;
-    cursor: pointer;
-  }
+  text-decoration: none;
+  border: 1.5px solid black;
+  padding: 4px 10px;
+  background-color: transparent;
+  font-size: 19px;
+  cursor: pointer;
+}
 
 .menu li {
   margin-right: 10px;
@@ -87,8 +90,8 @@ nav {
   cursor: pointer;
 }
 
-
-#Signup, #Login {
+#Signup,
+#Login {
   display: none;
   position: fixed;
   padding: 6vh;
@@ -96,22 +99,270 @@ nav {
   top: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 10000000px #000;
-  width: 10vw;
-  height: 30vh;
+  width: 60%;
+  height: 50%;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   text-align: center;
+  padding-top: 180px;
   margin: 15px 0px;
- 
+  background-color: white;
+  background-image: url("/Images/Login\ Background\ Image.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #181e4b;
 }
-#Submit_Login, #Submit_Login{
-    cursor: pointer;
+#Submit_Login,
+#Submit_Signup {
+  cursor: pointer;
+  width: 120px;
+  height: 30px;
+  font-size: large;
+  border-radius: 3px;
+  border: 2px solid black;
 }
+#username_signup,
+#password_signup,
+#username_login,
+#password_login {
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
 #Logout {
   display: none;
 }
 
+/*  TRAVELLER SECTION */
+.TravellerGirl {
+  position: absolute;
+  margin-top: 60px;
+  margin-right: 50px;
+  top: 0;
+  right: 0;
+  width: 765px;
+  height: 764px;
+  background-image: url("/Images/Traveller\ Image.jpg");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: top right;
+  z-index: -1;
+}
+.Intro {
+  padding: 10vh 15vw;
+}
+#Tab::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.PreHeading {
+  color: #df6951;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.Travell_Heading {
+  color: var(--1st, #181e4b);
+  font-size: 6.2vw;
+  font-family: Volkhov;
+  font-weight: 700;
+  line-height: 89px;
+  letter-spacing: -3.36px;
+  width: 545px;
+  height: 267px;
+}
+.Travell_Description {
+  color: #5e6282;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.FindMore {
+  width: 170px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--yellow, #f1a501);
+  box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+  color: var(--white, #fff);
+  font-size: 18px;
+  font-family: Google Sans;
+  font-weight: 500;
+  /* justify-content:space-evenly; */
+  padding-top: 15px;
+  text-align: center;
+}
+.Youtube {
+  text-decoration: none;
+  display: flex;
+  height: fit-content;
+  background-color: transparent;
+  border: none;
+  height: max-content;
+  align-items: center;
+  /* justify-content:space-around; */
+  cursor: pointer;
+}
+
+/*    S E R V I C E S */
+
+.Category {
+  margin-top: 100px;
+  color: var(--textclr, #5e6282);
+  text-align: center;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.Best_Services {
+  color: var(--3rd, #14183e);
+  text-align: center;
+  font-size: 50px;
+  font-family: Volkhov;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.service {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.div {
+  display: inline;
+  text-align: center;
+  width: 200px;
+  height: 220px;
+  margin: 20px 50px;
+  border-radius: 36px;
+  background: var(--white, #fff);
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0),
+    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+div p {
+  color: var(--textclr, #5e6282);
+  text-align: center;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 26px;
+  margin: 20px 0px;
+}
+div h5 {
+  color: var(--text-heading-color, #1e1d4c);
+  text-align: center;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-weight: 600;
+  margin: 15px 0px;
+}
+.Services_Img {
+  width: 92px;
+  height: 78px;
+  flex-shrink: 0;
+}
+
+/* D E S T I N A T I O N S */
+.Top_Selling {
+  margin-top: 100px;
+  color: var(--textclr, #5e6282);
+  text-align: center;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.Top_Destinations {
+  color: var(--3rd, #14183e);
+  text-align: center;
+  font-size: 50px;
+  font-family: Volkhov;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.Countries {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.places {
+  width: 314px;
+  height: 457px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.City :hover {
+  width: 600px;
+  height: 650px;
+  transition: 500ms;
+}
+.tab {
+  display: inline-block;
+  margin-left: 150px;
+}
+.City {
+  margin: 5px 20px;
+}
+
+.City h5 {
+  color: var(--textclr, #5e6282);
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+.City h6 {
+  color: var(--textclr, #5e6282);
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+.arrow_city {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
 @media screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  #Signup,
+  #Login {
+    display: none;
+    position: fixed;
+    padding: 6vh;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0px;
+    font-size: larger;
+    background-image: none;
+  }
   .menu {
     flex-direction: column;
     position: relative;
@@ -120,10 +371,10 @@ nav {
   }
   .logo {
     position: relative;
-    left: 28%;
+    left: 25%;
   }
   .logoImg {
-    width: 40%;
+    width: 100%;
   }
 
   nav {
@@ -140,5 +391,65 @@ nav {
 
   .nav-background {
     display: none;
+  }
+
+  /* Traveller Intro */
+  .TravellerGirl {
+    display: none;
+  }
+  .Intro {
+    padding-left: 20px;
+    width: min-content;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    width: 360px;
+  }
+
+  #Tab::after {
+    content: none;
+  }
+
+  .Travell_Heading {
+    letter-spacing: 3px;
+    line-height: normal;
+    font-size: 45px;
+  }
+
+  .Travell_Description {
+    margin-top: -100px;
+    margin-left: -10px;
+  }
+
+  /* B E S T   S E R V I C E S */
+  .service {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div {
+    height: 250px;
+  }
+  .Best_Services {
+    margin-left: 30px;
+  }
+
+  /*  T O P    D E S T I N A T I O N S */
+  .Countries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  hr.new1 {
+    border-top: 1px solid black;
+  }
+  .City {
+    /* margin-left: 50px; */
+  }
+  .Top_Destinations {
+    font-size: 40px;
+    align-self: center;
+    justify-content: center;
   }
 }
