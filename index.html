@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
- 
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadoo - Travel Agency</title>
+    <link rel="icon" href="/Images/Website Icon.png" />
+    <link rel="stylesheet" href="/Style.css" />
+    <script src="/index.js"></script>
+    <meta
+      name="keywords"
+      content="Jadoo,Travel Agency ,Tours and Travels, Flights ,Places to Travel,Bookings,Hotels "
+    />
+  </head>
+  <body>
+        <!-- <img src="/Images/Traveller Image cream Background.png" class="travelBgImg alt=""> -->
+    
+    <nav>
+      <div class="logo">
+        <button id="Logo_Button"  background-color: transparent;><img src="/Images/Jadoo Logo.jpg" class="logoImg" alt="" /></button>
+      </div>
+      <ul class="menu">
+        <li>Destinations</li>
+        <li>Hotels</li>
+        <li>Flights</li>
+        <li>Bookings</li>
+        <li><button id="login" onclick="Login()">Login</button></li>
+        <li><button id="signup" onclick="SignUp()">Signup</button></li>
+        <li><button id="Logout" onclick="window.location.href='index.html';" >Logout</button></li>
+        <li class="Lang">EN <img src="/Images/Down Caret.jpg" alt="" /></li>
+      </ul>
+    </nav>
+    <div class="nav-background"></div>
+    <div id="Login">
+        <h3>Login</h3>
+        <br>
+        <h4>Username</h4>
+        <input type="text" placeholder="Username" id="username_login">
+        
+        <h4><br>Password</h4>
+        <input type="password" placeholder="Password" id="password_login">
+        <h5 id="InvalidLogin"></h5>
+        <br>
+        <button id="Submit_Login" onclick="Submit_Login()">Submit</button>
+    </div>
+    <div id="Signup">
+        <h3>SignUp</h3>
+        <br>
+        <h4>Username</h4>
+        <input type="text" placeholder="Username" id="username_signup">
+        <h4><br>Password</h4>
+        <input type="password" placeholder="Password" id="password_signup">
+        <h5><br></h5>
+        <button id="Submit_Login" onclick="Submit_Signup()">Submit</button>
+    </div>
+
+  </body>
 </html>

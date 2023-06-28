@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* 
+  position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    align-items: center; */
+
+/* ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: max-content;
+        background-color: aquamarine;
+        
+
+    }
+    nav ul li {
+        display:inline-flex;
+        flex-direction: row;
+        position: relative;
+        margin: 5px 1vw;
+        
+
+        
+    } */
+
+/* .travelBgImg {
+  width: 40vw;
+  float: right;
+} */
+
+.nav-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background-image: url("/Images/Traveller\ Image\ cream\ Background.png");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: top right;
+  z-index: -2;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 15px 20px 5px 30px;
+}
+.logoImg {
+  width: 120%;
+  cursor: pointer;
+}
+#Logo_Button{
+    background-color: transparent;
+    border: none;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  margin: 10px 50px;
+}
+.menu button {
+    text-decoration: none;
+    border: 1.5px solid black;
+    padding: 4px 10px;
+    background-color: transparent;
+    font-size: 19px;
+    cursor: pointer;
+  }
+
+.menu li {
+  margin-right: 10px;
+  padding: 0px 20px;
+  margin: 2px 5px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+#Signup, #Login {
+  display: none;
+  position: fixed;
+  padding: 6vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10000000px #000;
+  width: 10vw;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0px;
+ 
+}
+#Submit_Login, #Submit_Login{
+    cursor: pointer;
+}
+#Logout {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    position: relative;
+    background-color: antiquewhite;
+    border-radius: 15px;
+  }
+  .logo {
+    position: relative;
+    left: 28%;
+  }
+  .logoImg {
+    width: 40%;
+  }
+
+  nav {
+    display: inline;
+    z-index: 2;
+  }
+
+  .menu li {
+    margin-right: 0;
+    margin-bottom: 15px;
+    position: relative;
+    align-self: center;
+  }
+
+  .nav-background {
+    display: none;
+  }
+}
