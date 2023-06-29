@@ -1,39 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  /* overflow-y: hidden; */
 }
-/* 
-  position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: max-content;
-    align-items: center; */
-
-/* ul{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: max-content;
-        background-color: aquamarine;
-        
-
-    }
-    nav ul li {
-        display:inline-flex;
-        flex-direction: row;
-        position: relative;
-        margin: 5px 1vw;
-        
-
-        
-    } */
-
-/* .travelBgImg {
-  width: 40vw;
-  float: right;
-} */
 
 .nav-background {
   position: absolute;
@@ -42,7 +10,6 @@
   width: 70%;
   height: 100%;
   background-image: url("/Images/Traveller\ Image\ cream\ Background.png");
-  /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: top right;
   z-index: -2;
@@ -60,7 +27,6 @@ nav {
   margin: 15px 20px 5px 30px;
 }
 .logoImg {
-  /* width: 120%; */
   cursor: pointer;
 }
 #Logo_Button {
@@ -138,6 +104,7 @@ nav {
 }
 
 /*  TRAVELLER SECTION */
+
 .TravellerGirl {
   position: absolute;
   margin-top: 60px;
@@ -147,7 +114,6 @@ nav {
   width: 765px;
   height: 764px;
   background-image: url("/Images/Traveller\ Image.jpg");
-  /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: top right;
   z-index: -1;
@@ -340,14 +306,9 @@ div h5 {
   flex-shrink: 0;
 }
 
-
-
 /*  N E X T    T R I P */
 
-
-
-
-.Next_Trip{
+.Next_Trip {
   margin-top: 100px;
   display: flex;
   flex-direction: row;
@@ -439,7 +400,6 @@ div h5 {
   height: 161px;
   flex-shrink: 0;
   border-radius: 24px;
-
 }
 .tripGreece h3 {
   color: var(--black, #080809);
@@ -484,14 +444,14 @@ div h5 {
     0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02),
     0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
-.triptoRome{
+.triptoRome {
   /* align-items:center; */
   justify-content: space-around;
   border-radius: 30px;
   margin-top: 40px;
   margin-left: 20px;
 }
-.RomeContent{
+.RomeContent {
   float: right;
   /* align-self:safe; */
 }
@@ -518,6 +478,181 @@ div h5 {
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.77px;
+}
+
+/* T E S T I M O N I A L S */
+
+.PeopleTestimonials {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.SayAboutUs {
+  /* float: left; */
+  margin-right: 300px;
+  /* position: absolute; */
+}
+.SayAboutUs h3 {
+  color: var(--textclr, #5e6282);
+  font-size: 18px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.SayAboutUs h1 {
+  color: var(--3rd, #14183e);
+  font-size: 50px;
+  font-family: Volkhov;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.Arrow {
+  display: inline-block;
+}
+
+.Arrows {
+  width: 20px;
+}
+.Up,
+.Down {
+  background-color: transparent;
+  cursor: pointer;
+  display: inline;
+}
+
+#Person1 p,
+#Person2 p,
+#Person3 p {
+  text-align: start;
+}
+
+#Person1 h2,
+#Person2 h2,
+#Person3 h2 {
+  color: var(--textclr, #3b3166);
+  font-size: 20px;
+  /* font-family: Poppins; */
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#Person1 h4,
+#Person2 h4,
+#Person3 h4 {
+  color: var(--textclr, #565d94);
+  font-size: 14px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.PeopleSay {
+  float: left;
+}
+#Person1 {
+  display: block;
+  width: 400px;
+}
+
+#Person2 {
+  display: none;
+  width: 400px;
+}
+
+#Person3 {
+  display: none;
+  width: 400px;
+}
+.photo {
+  width: 68px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 35px;
+}
+
+/* A I R L I N E S */
+
+.Airlines {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 100px 200px;
+}
+.airline {
+  width: 130px;
+  height: 100px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* S U B S C R I B E */
+
+.Subscribe {
+  width: 1170px;
+  height: 407px;
+  flex-shrink: 0;
+  border-radius: 120px 20px 120px 20px;
+  /* opacity: 0.20000000298023224; */
+  background: var(--light-color, #f4f0ff);
+  position: absolute;
+  margin: 100px 10%;
+}
+
+.Subscribe h1 {
+  color: var(--textclr, #5d69bd);
+  text-align: center;
+  font-size: 33px;
+  /* font-family: Poppins; */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  /* z-index: 100px; */
+  margin-top: 50px;
+}
+.Email{
+  position: absolute;
+  top: 50%;
+  left: 25%;
+
+}
+
+.mail {
+  width: 180px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(
+    --gradient,
+    linear-gradient(180deg, #ff946d 0%, #ff7d68 100%)
+  );
+  color: var(--white, #FFF);
+text-align: center;
+font-size: 17px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border: none;
+}
+
+#email {
+  /* margin-top: 50px; */
+  width: 421px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--white, #fff);
+  border: none;
 }
 
 /*   R E S P O N S I V E   D E S I G N */

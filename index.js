@@ -27,7 +27,7 @@ function Login() {
 }
 
 function enableScroll() {
-    window.onscroll = function() {};
+  window.onscroll = function () {};
 }
 
 function Submit_Login() {
@@ -51,12 +51,56 @@ function Submit_Login() {
   }
 }
 
-function Destination_Scroll(){
-  var element = document.getElementById('Destinations');
-var position = element.getBoundingClientRect();
-var x = position.left;
-var y = position.top;
-console.log(x);
-console.log(y);
-scrollTo(x,y);
+function Destination_Scroll() {
+  var element = document.getElementById("Destinations");
+  var position = element.getBoundingClientRect();
+  var x = position.left;
+  var y = position.top;
+  console.log(x);
+  console.log(y);
+  scrollTo(x, y);
 }
+
+// TESTIMONIALS
+let slide = 1;
+
+function DownSlide() {
+  const Person1 = document.getElementById("Person1");
+  const Person2 = document.getElementById("Person2");
+  const Person3 = document.getElementById("Person3");
+  if (slide == 1) {
+    Person1.style.display = "none";
+    Person2.style.display = "block";
+    slide++;
+  } else if (slide == 2) {
+    Person2.style.display = "none";
+    Person3.style.display = "block";
+    slide++;
+  } else if (slide == 3) {
+    Person3.style.display = "none";
+    Person1.style.display = "block";
+    slide = 1;
+  }
+}
+
+function UpSlide() {
+  const Person1 = document.getElementById("Person1");
+  const Person2 = document.getElementById("Person2");
+  const Person3 = document.getElementById("Person3");
+  if (slide == 1) {
+    Person1.style.display = "none";
+    Person3.style.display = "block";
+    slide = 3;
+  } else if (slide == 2) {
+    Person2.style.display = "none";
+    Person1.style.display = "block";
+    slide--;
+  } else if (slide == 3) {
+    Person3.style.display = "none";
+    Person2.style.display = "block";
+    slide--;
+  }
+}
+
+
+

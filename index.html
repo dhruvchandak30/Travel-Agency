@@ -6,7 +6,11 @@
     <title>Jadoo - Travel Agency</title>
     <link rel="icon" href="/Images/Website Icon.png" />
     <link rel="stylesheet" href="/Style.css" />
+    <script src="https://apis.google.com/js/api.js"></script>
     <script src="/index.js"></script>
+    <script src="/Email.js"></script>
+    
+
     <meta
       name="keywords"
       content="Jadoo,Travel Agency ,Tours and Travels, Flights ,Places to Travel,Bookings,Hotels "
@@ -212,16 +216,86 @@
         <h5>14-29 June | By Dhruv Chandak</h5>
         <h6>24 People going</h6>
         <div class="tripRome">
-          <img src="/Images/Trip to Rome.png" class="triptoRome" alt="">
+          <img src="/Images/Trip to Rome.png" class="triptoRome" alt="" />
           <div class="RomeContent">
-          <h5>Ongoing</h5>
-          <h2>Trip to Rome</h2>
-          <h4>40% complete</h4>
-          <img src="/Images/40.png" alt="Completion" class="complete">
-        </div>
+            <h5>Ongoing</h5>
+            <h2>Trip to Rome</h2>
+            <h4>40% complete</h4>
+            <img src="/Images/40.png" alt="Completion" class="complete" />
+          </div>
         </div>
       </div>
- 
+    </section>
+
+    <section class="PeopleTestimonials">
+      <div class="SayAboutUs">
+        <h3>TESTIMONIALS</h3>
+        <h1>What People Say<br />About Us.</h1>
+        <div class="Arrow">
+          <button class="Up" onclick="UpSlide()">
+            <img src="/Images/UpArrow.jpg" class="Arrows" alt="" />
+          </button>
+          <button class="Down" onclick="DownSlide()">
+            <img src="/Images/Downward Arrow.jpeg" class="Arrows" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="PeopleSay">
+        <div id="Person1">
+          <img src="/Images/Dhruv.jpg" alt="" class="photo" />
+          <p>
+            “On the Windows talking painted pasture yet its<br />express parties
+            use. Sure last upon he same as<br />knew next. Of believed or
+            diverted no.”
+          </p>
+          <br />
+          <h2>Dhruv Chandak</h2>
+          <h4>Nagpur,Maharshtra</h4>
+        </div>
+        <div id="Person2">
+          <img src="/Images/Captain_America.webp" alt="" class="photo" />
+          <p>
+            "Just love travelling with Jadoo Agency.<br />I have been travelling
+            with them since<br />70 years.Even when I was in Ice."
+          </p>
+          <h2>Captain America</h2>
+          <h4>Brookyln NewYork</h4>
+        </div>
+        <div id="Person3">
+          <img src="/Images/Iron Man.jpeg" alt="" class="photo" />
+          <p>
+            "Travel connects people and provides opportunities<br />
+            to learn about new and different cultures."
+          </p>
+          <h2>Iron Man</h2>
+          <h4>Stark Towers</h4>
+        </div>
+      </div>
+    </section>
+    <section class="Airlines">
+      <img src="/Images/Airlines 1.png" class="airline" alt="" /><img
+        src="/Images/Airlines 2.png" class="airline"
+        alt=""
+      /><img src="/Images/Airlines 3.png" class="airline" alt="" /><img
+        src="/Images/Airlines 4.png" class="airline"
+        alt=""
+      /><img src="/Images/Airlines 5.png" class="airline" alt="" />
+    </section>
+
+    <section class="Subscrive_Mailing">
+      <div class="Subscribe">
+      <h1>Subscribe to get information, latest news and other<br>
+        interesting offers about Cobham</h1>
+        <div class="Email">
+          <input type="email" placeholder="Your Email" id="email">
+          <button onclick="sendEmail()" class="mail">SUBSCRIBE</button>
+         
+        </div>
+      </div>
+      
     </section>
   </body>
 </html>
+<!-- dhruvdeveloper2003@gmail.com -->
+<!-- DHRUVCHANDAK@2003 -->
