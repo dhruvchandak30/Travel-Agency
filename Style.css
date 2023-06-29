@@ -340,6 +340,188 @@ div h5 {
   flex-shrink: 0;
 }
 
+
+
+/*  N E X T    T R I P */
+
+
+
+
+.Next_Trip{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.Book h4 {
+  color: var(--textclr, #5e6282);
+  font-size: 18px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.Book {
+  float: inline-start;
+  margin-left: 160px;
+}
+
+.Book h1 {
+  color: var(--3rd, #14183e);
+  font-size: 50px;
+  font-family: Volkhov;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.Book .Next {
+  display: inline;
+  float: left;
+  margin-right: 15px;
+  height: 60px;
+}
+.Book h3 {
+  color: var(--textclr, #5e6282);
+  font-size: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 124.5%; */
+  /* display: flex; */
+}
+.Book h5 {
+  color: var(--textclr, #5e6282);
+  font-size: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  text-align: start;
+  /* line-height: 124.5%; */
+  /* display: inline-flex; */
+  /* float: left; */
+  /* text-align: justify; */
+}
+.Cate {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 20px;
+}
+
+.Choose,
+.Payment,
+.Reach {
+  margin: 10px 5px;
+}
+/* 
+#space::after {
+  content: "\a";
+  white-space: pre;
+} */
+.tripGreece {
+  float: right;
+  width: 340px;
+  height: 300px;
+  flex-shrink: 0;
+  margin-left: 150px;
+  margin-top: 100px;
+  border-radius: 26px;
+  background: var(--white, #fff);
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0),
+    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+.triptoGreece {
+  width: 321px;
+  height: 161px;
+  flex-shrink: 0;
+  border-radius: 24px;
+
+}
+.tripGreece h3 {
+  color: var(--black, #080809);
+  font-size: 18px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.27px;
+}
+
+.tripGreece h5 {
+  color: var(--text-2, #84829a);
+  font-size: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+
+  letter-spacing: -0.08px;
+}
+.tripGreece h6 {
+  color: var(--text-2, #84829a);
+  font-size: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+}
+.tripRome {
+  width: 263px;
+  height: 129px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  margin-left: 190px;
+  margin-top: -70px;
+  /* background: var(--white, #fff); */
+  background-color: white;
+  opacity: 1;
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0),
+    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+.triptoRome{
+  /* align-items:center; */
+  justify-content: space-around;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.RomeContent{
+  float: right;
+  /* align-self:safe; */
+}
+
+.tripRome h5 {
+  color: var(--text-2, #8279e9);
+  font-size: 14px;
+  font-family: Poppins;
+  font-style: normal;
+  letter-spacing: -0.49px;
+  text-align: start;
+}
+.tripRome h2 {
+  color: var(--black, #080809);
+  font-size: 18px;
+  font-family: Poppins;
+  font-style: normal;
+  letter-spacing: -0.27px;
+}
+.tripRome h4 {
+  color: #8a79df;
+  font-size: 14px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.77px;
+}
+
+/*   R E S P O N S I V E   D E S I G N */
+
 @media screen and (max-width: 768px) {
   * {
     overflow-x: hidden;
