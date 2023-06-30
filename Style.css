@@ -2,6 +2,20 @@
   padding: 0;
   margin: 0;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#ScrollTop {
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  left: 95%;
+  top: 90%;
+  display: none;
+  z-index: 100;
+}
 
 .nav-background {
   position: absolute;
@@ -54,6 +68,14 @@ nav {
   margin: 2px 5px;
   font-size: 22px;
   cursor: pointer;
+}
+
+#Nolang {
+  position: relative;
+  float: right;
+  margin-right: 20px;
+  margin-top: -10px;
+  display: none;
 }
 
 #Signup,
@@ -492,7 +514,7 @@ div h5 {
 
 .SayAboutUs {
   /* float: left; */
-  margin-right: 300px;
+  margin-right: 200px;
   /* position: absolute; */
 }
 .SayAboutUs h3 {
@@ -516,10 +538,11 @@ div h5 {
 }
 .Arrow {
   display: inline-block;
+  margin-left: 90px;
 }
 
 .Arrows {
-  width: 20px;
+  width: 25px;
 }
 .Up,
 .Down {
@@ -562,16 +585,19 @@ div h5 {
 #Person1 {
   display: block;
   width: 400px;
+  height: 200px;
 }
 
 #Person2 {
   display: none;
   width: 400px;
+  height: 200px;
 }
 
 #Person3 {
   display: none;
   width: 400px;
+  height: 200px;
 }
 .photo {
   width: 68px;
@@ -582,11 +608,11 @@ div h5 {
 
 /* A I R L I N E S */
 
-.Airlines {
+#Airlines {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 100px 200px;
+  margin: 150px 200px;
 }
 .airline {
   width: 130px;
@@ -619,11 +645,10 @@ div h5 {
   /* z-index: 100px; */
   margin-top: 50px;
 }
-.Email{
+.Email {
   position: absolute;
   top: 50%;
   left: 25%;
-
 }
 
 .mail {
@@ -635,14 +660,15 @@ div h5 {
     --gradient,
     linear-gradient(180deg, #ff946d 0%, #ff7d68 100%)
   );
-  color: var(--white, #FFF);
-text-align: center;
-font-size: 17px;
-font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-border: none;
+  color: var(--white, #fff);
+  text-align: center;
+  font-size: 17px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
 }
 
 #email {
@@ -655,11 +681,108 @@ border: none;
   border: none;
 }
 
+/*   F O O T E R  */
+
+footer {
+  margin-top: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+.Company,
+.Contact,
+.More {
+  display: flex;
+  flex-direction: column;
+}
+footer h1 {
+  color: var(--1st, #181e4b);
+  font-size: 44px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+footer h5 {
+  color: var(--textclr, #5e6282);
+  font-size: 13px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124.5%;
+}
+
+footer h2 {
+  color: var(--black, #080809);
+  font-size: 21px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 124.5%;
+  padding-bottom: 20px;
+}
+footer h4 {
+  color: var(--textclr, #5e6282);
+  font-size: 18px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124.5%;
+  margin: 5px 0px;
+}
+.social {
+  width: 41px;
+  height: 41px;
+  flex-shrink: 0;
+}
+
+footer h3 {
+  color: var(--textclr, #5e6282);
+  font-size: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124.5%;
+  letter-spacing: 0.1px;
+}
+
+.store {
+  width: 80px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
+
+.RightsReserved {
+  text-align: center;
+  color: var(--textclr, #5e6282);
+  font-size: 14px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124.5%;
+  margin-bottom: 50px;
+  background-color: #000;
+  color: white;
+  margin-bottom: 0px;
+  height: 25px;
+  text-align: center;
+  font-size: medium;
+}
+
 /*   R E S P O N S I V E   D E S I G N */
 
 @media screen and (max-width: 768px) {
   * {
     overflow-x: hidden;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  #ScrollTop {
+    left: 85%;
   }
 
   #Signup,
@@ -730,12 +853,16 @@ border: none;
   .Travell_Heading {
     letter-spacing: 3px;
     line-height: normal;
-    font-size: 45px;
+    font-size: 40px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: -85px;
   }
 
   .Travell_Description {
     margin-top: -100px;
-    margin-left: -10px;
+    text-align: center;
   }
 
   /* B E S T   S E R V I C E S */
@@ -769,4 +896,172 @@ border: none;
     align-self: center;
     justify-content: center;
   }
+
+  /*  N E X T  T R I P */
+  .Next_Trip {
+    /* margin-top: 500px; */
+    display: flex;
+    flex-direction: row;
+    /* position: absolute; */
+    align-items: center;
+    justify-content: center;
+    /* width: 100px; */
+    /* left: 110%; */
+    /* height: max-content; */
+    overflow-y: hidden;
+  }
+  .Cate h3 {
+    text-align: start;
+  }
+  .Book {
+    float: left;
+    margin-left: 10px;
+    width: 100vw;
+    height: max-content;
+    /* display: inline-flexbox; */
+  }
+  .tripGreece {
+    display: none;
+  }
+
+  .PeopleTestimonials {
+    /* margin-top: 2300px; */
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  .PeopleSay {
+    align-items: start;
+    /* position: absolute; */
+    float: left;
+    /* justify-content: space-between; */
+    margin-left: -30%;
+  }
+  .SayAboutUs h3 {
+    /* margin-left: -110px; */
+    text-align: center;
+  }
+  #Person1,
+  #Person2,
+  #Person3 {
+    display: block;
+    height: max-content;
+    /* float:inline-start; */
+    margin-bottom: 30px;
+    align-self: center;
+  }
+  #Person1 p,
+  #Person2 p,
+  #Person3 p {
+    text-align: center;
+  }
+  #Person2 p,
+  #Person3 p {
+    text-align: center;
+  }
+
+  #Person1 h2,
+  #Person2 h2,
+  #Person3 h2 {
+    margin-top: -30px;
+    text-align: center;
+  }
+  #Person2 h2,#Person3 h2{
+    margin-top: -10px;
+    text-align: center;
+  }
+  #Person1 h4,
+  #Person2 h4,
+  #Person3 h4 {
+    text-align: center;
+  }
+
+  .photo {
+    /* margin-left: -100px;*/
+    width: 80px;
+    height: 90px;
+    text-align: center;
+  }
+  .Arrow {
+    display: none;
+  }
+
+  /*  A I R L I N E S */
+  #Airlines{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    /* float: inline-start; */
+    /* position: absolute; */
+    /* position:absolute; */
+    margin-top: -100px;
+    margin-left: 100px;
+
+  }
+  .airline{
+    position: absolute;
+      /* display: inline-block; */
+      /* margin-top: 30px; */
+      height: auto;
+  }
+  .airlin1{
+    justify-content: space-around;
+    margin-top: 100px;
+  }
+  .airlin2{
+    justify-content: space-around;
+    margin-top: 80px;
+  }
+  .airlin3{
+    justify-content: space-around;
+     margin-top: 30px;
+  }
+  .airlin4{
+    justify-content: space-around;
+     margin-top: 110px;
+  }
+  .airlin5{
+    justify-content: space-around;
+     margin-top: 70px;
+  }
+
+  /*  S U B S C R I B E  */
+  .Subscribe{
+    margin-top: -20px;
+    max-width: fit-content;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+  }
+  .Subscribe #email{
+    width: max-content;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer{
+    background-color:#dbd3d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 0px;
+  }
+  .SocialMedia{
+    margin-top: 20px;
+  }
+  .RightsReserved{
+    margin-top: 10px;
+    /* height: 100px; */
+    background-color:#4b4848;
+    margin-bottom: 0px;
+    color: white;
+    
+  }
+
 }

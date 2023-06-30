@@ -1,9 +1,35 @@
+function ScrollToTop() {
+  scrollTo(0, 0);
+}
+
+window.addEventListener('scroll', function() {
+  var top = document.getElementById('ScrollTop');
+  var scrollTop = window.pageYOffset;
+
+  if (scrollTop > 10) {
+    top.style.display = 'block';
+  } else {
+    top.style.display = 'none';
+  }
+});
+
+function Languages(){
+  document.getElementById('Nolang').style.display="block";
+  setInterval(function(){
+    document.getElementById('Nolang').style.display="none";
+  },2000);
+}
+
+
 function disableScroll() {
-  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  (scrollLeft = window.pageXOffset || document.documentElement.scrollLeft),
+  scrollTop = window.pageYOffset;
+  (scrollLeft = window.pageXOffset),
     (window.onscroll = function () {
       window.scrollTo(scrollLeft, scrollTop);
     });
+}
+function enableScroll() {
+  window.onscroll = function () {};
 }
 
 function SignUp() {
@@ -11,6 +37,20 @@ function SignUp() {
   document.getElementById("Login").style.display = "none";
   disableScroll();
 }
+
+
+window.addEventListener("scroll", function() {
+  const peopleSection = document.querySelector(".PeopleSay");
+  const peopleSectionRect = peopleSection.getBoundingClientRect();
+  
+  if (peopleSectionRect.top <= window.innerHeight && peopleSectionRect.bottom >= 0) {
+    const scrollPercentage = (window.scrollY - peopleSectionRect.top) / (peopleSectionRect.height - window.innerHeight);
+    const scrollAmount = (peopleSection.scrollWidth - window.innerWidth) * scrollPercentage;
+    peopleSection.scrollLeft = scrollAmount;
+  }
+});
+
+
 
 function Submit_Signup() {
   let username = document.getElementById("username_signup").value;
@@ -26,9 +66,7 @@ function Login() {
   disableScroll();
 }
 
-function enableScroll() {
-  window.onscroll = function () {};
-}
+
 
 function Submit_Login() {
   let user = localStorage.getItem("Name");
@@ -56,6 +94,15 @@ function Destination_Scroll() {
   var position = element.getBoundingClientRect();
   var x = position.left;
   var y = position.top;
+  console.log(x);
+  console.log(y);
+  scrollTo(x, y);
+}
+function Flights_Scroll() {
+  var element = document.getElementById("Airlines");
+  var position = element.getBoundingClientRect();
+  var x = position.left;
+  var y = position.top - 220;
   console.log(x);
   console.log(y);
   scrollTo(x, y);
@@ -101,6 +148,3 @@ function UpSlide() {
     slide--;
   }
 }
-
-
-

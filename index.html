@@ -6,17 +6,23 @@
     <title>Jadoo - Travel Agency</title>
     <link rel="icon" href="/Images/Website Icon.png" />
     <link rel="stylesheet" href="/Style.css" />
-    <script src="https://apis.google.com/js/api.js"></script>
+
     <script src="/index.js"></script>
     <script src="/Email.js"></script>
-    
-
     <meta
       name="keywords"
       content="Jadoo,Travel Agency ,Tours and Travels, Flights ,Places to Travel,Bookings,Hotels "
     />
   </head>
   <body>
+    <div class="ScrollToTop">
+      <img
+        src="/Images/UpArrow.jpg"
+        id="ScrollTop"
+        alt=""
+        onclick="ScrollToTop()"
+      />
+    </div>
     <!-- <img src="/Images/Traveller Image cream Background.png" class="travelBgImg alt=""> -->
 
     <nav>
@@ -27,8 +33,15 @@
       </div>
       <ul class="menu">
         <li onclick="Destination_Scroll()">Destinations</li>
-        <li>Hotels</li>
-        <li>Flights</li>
+        <li>
+          <a
+            href="https://www.travelandleisure.com/worlds-best/best-hotels-in-the-world-2022"
+            target="_blank"
+            style="text-decoration: none"
+            >Hotels</a
+          >
+        </li>
+        <li onclick="Flights_Scroll()">Flights</li>
         <li>Bookings</li>
         <li><button id="login" onclick="Login()">Login</button></li>
         <li><button id="signup" onclick="SignUp()">Signup</button></li>
@@ -37,9 +50,14 @@
             Logout
           </button>
         </li>
-        <li class="Lang">EN <img src="/Images/Down Caret.jpg" alt="" /></li>
+        <li class="Lang" onclick="Languages()">
+          EN <img src="/Images/Down Caret.jpg" alt="" />
+        </li>
       </ul>
     </nav>
+    <div id="Nolang">
+      <h3>More Languages<br />Coming Soon!</h3>
+    </div>
     <div class="nav-background"></div>
     <div id="Login">
       <h1>Login</h1>
@@ -230,7 +248,7 @@
     <section class="PeopleTestimonials">
       <div class="SayAboutUs">
         <h3>TESTIMONIALS</h3>
-        <h1>What People Say<br />About Us.</h1>
+        <h1>What People Say<br />About Us</h1>
         <div class="Arrow">
           <button class="Up" onclick="UpSlide()">
             <img src="/Images/UpArrow.jpg" class="Arrows" alt="" />
@@ -265,36 +283,88 @@
         <div id="Person3">
           <img src="/Images/Iron Man.jpeg" alt="" class="photo" />
           <p>
-            "Travel connects people and provides opportunities<br />
-            to learn about new and different cultures."
+            "Pepper and Morgan prefer Jadoo Agency<br />
+            as I can fly because I am IRON MAN"
           </p>
           <h2>Iron Man</h2>
           <h4>Stark Towers</h4>
         </div>
       </div>
     </section>
-    <section class="Airlines">
-      <img src="/Images/Airlines 1.png" class="airline" alt="" /><img
-        src="/Images/Airlines 2.png" class="airline"
-        alt=""
-      /><img src="/Images/Airlines 3.png" class="airline" alt="" /><img
-        src="/Images/Airlines 4.png" class="airline"
-        alt=""
-      /><img src="/Images/Airlines 5.png" class="airline" alt="" />
-    </section>
 
+    <section id="Airlines">
+      <div class="airlin1">
+        <img src="/Images/Airlines 1.png" class="airline" alt="" />
+      </div>
+      <div class="airlin2">
+        <img src="/Images/Airlines 2.png" class="airline" alt="" />
+      </div>
+      <div class="airlin3">
+        <img src="/Images/Airlines 3.png" class="airline" alt="" />
+      </div>
+      <div class="airlin4">
+        <img src="/Images/Airlines 4.png" class="airline" alt="" />
+      </div>
+      <div class="airlin5">
+        <img src="/Images/Airlines 5.png" class="airline" alt="" />
+      </div>
+    </section>
     <section class="Subscrive_Mailing">
       <div class="Subscribe">
-      <h1>Subscribe to get information, latest news and other<br>
-        interesting offers about Cobham</h1>
+        <h1>
+          Subscribe to get information, latest news and other<br />
+          interesting offers about Cobham
+        </h1>
         <div class="Email">
-          <input type="email" placeholder="Your Email" id="email">
-          <button onclick="sendEmail()" class="mail">SUBSCRIBE</button>
-         
+          <input type="email" placeholder="Your Email" id="email" />
+          <button onclick="sendMail()" class="mail">SUBSCRIBE</button>
         </div>
       </div>
-      
     </section>
+    
+    
+    <footer>
+      <div class="JadooLogo">
+        <h1>Jadoo.</h1>
+        <h5>
+          Book your trip in minute, get full<br />Control for much longer.
+        </h5>
+      </div>
+      <div class="Company">
+        <h2>Company</h2>
+        <h4>About</h4>
+        <h4>Careeres</h4>
+        <h4>Mobile</h4>
+      </div>
+      <div class="Contact">
+        <h2>Contact</h2>
+        <h4>Help/FAQ</h4>
+        <h4>Press</h4>
+        <h4>Affilates</h4>
+      </div>
+      <div class="More">
+        <h2>More</h2>
+        <h4>Airlinefees</h4>
+        <h4>Airline</h4>
+        <h4>Low fare trips</h4>
+      </div>
+      <div class="SocialMedia">
+        <img src="/Images/Facebook.png" alt="" class="social" /><img
+          src="/Images/Insta.png"
+          alt=""
+          class="social"
+        /><img src="/Images/Twitter.png" alt="" class="social" />
+        <h3>&nbsp;Discover our App</h3>
+        <img src="/Images/Get on PlayStore.png" alt="" class="store" /><img
+          src="/Images/Apple Store.png"
+          alt=""
+          class="store"
+        />
+      </div>
+    </footer>
+    <div class="RightsReserved">
+      <h3>All rights reserved@jadoo.co</h3>
+    </div>
   </body>
 </html>
 <!-- dhruvdeveloper2003@gmail.com -->
