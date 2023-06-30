@@ -1,7 +1,7 @@
 # Travel-Agency
 This project is a responsive landing page for a travel agency, designed using HTML, CSS, and JavaScript. The landing page incorporates features like login and sign-up functionalities, as well as showcases testimonials from famous personalities. The aim of the landing page is to attract potential customers.
 
-One cannot see the content of the website without SigningUp.
+One cannot see the content of the website without Signing or Login.
 
 Website URL: https://jadoo-travelagency.netlify.app/
 
