@@ -1,11 +1,10 @@
 function ScrollToTop() {
   scrollTo(0, 0);
 }
-
+// Scroll to Top Icon Visibilty
 window.addEventListener('scroll', function() {
   var top = document.getElementById('ScrollTop');
   var scrollTop = window.pageYOffset;
-
   if (scrollTop > 10) {
     top.style.display = 'block';
   } else {
@@ -13,14 +12,18 @@ window.addEventListener('scroll', function() {
   }
 });
 
+// Language Box
 function Languages(){
+  const width = window. innerWidth; 
+  if(width>700){
   document.getElementById('Nolang').style.display="block";
   setInterval(function(){
     document.getElementById('Nolang').style.display="none";
-  },2000);
+  },10000);
+}
 }
 
-
+// Disable Scrolling
 function disableScroll() {
   scrollTop = window.pageYOffset;
   (scrollLeft = window.pageXOffset),
@@ -28,6 +31,7 @@ function disableScroll() {
       window.scrollTo(scrollLeft, scrollTop);
     });
 }
+// Enable Scrolling
 function enableScroll() {
   window.onscroll = function () {};
 }
@@ -38,19 +42,10 @@ function SignUp() {
   disableScroll();
 }
 
-
-window.addEventListener("scroll", function() {
-  const peopleSection = document.querySelector(".PeopleSay");
-  const peopleSectionRect = peopleSection.getBoundingClientRect();
-  
-  if (peopleSectionRect.top <= window.innerHeight && peopleSectionRect.bottom >= 0) {
-    const scrollPercentage = (window.scrollY - peopleSectionRect.top) / (peopleSectionRect.height - window.innerHeight);
-    const scrollAmount = (peopleSection.scrollWidth - window.innerWidth) * scrollPercentage;
-    peopleSection.scrollLeft = scrollAmount;
-  }
-});
-
-
+function Exit(){
+  document.getElementById("Signup").style.display = "none";
+  document.getElementById("Login").style.display = "none";
+}
 
 function Submit_Signup() {
   let username = document.getElementById("username_signup").value;
@@ -58,6 +53,7 @@ function Submit_Signup() {
   localStorage.setItem("Name", username);
   localStorage.setItem("Password", password);
   document.getElementById("Signup").style.display = "none";
+  document.getElementById("signup").style.display = "none";
 }
 
 function Login() {
@@ -65,7 +61,6 @@ function Login() {
   document.getElementById("Signup").style.display = "none";
   disableScroll();
 }
-
 
 
 function Submit_Login() {
@@ -94,8 +89,6 @@ function Destination_Scroll() {
   var position = element.getBoundingClientRect();
   var x = position.left;
   var y = position.top;
-  console.log(x);
-  console.log(y);
   scrollTo(x, y);
 }
 function Flights_Scroll() {
@@ -103,10 +96,10 @@ function Flights_Scroll() {
   var position = element.getBoundingClientRect();
   var x = position.left;
   var y = position.top - 220;
-  console.log(x);
-  console.log(y);
   scrollTo(x, y);
 }
+
+
 
 // TESTIMONIALS
 let slide = 1;

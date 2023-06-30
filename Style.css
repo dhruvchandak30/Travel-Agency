@@ -15,6 +15,7 @@ body::-webkit-scrollbar {
   top: 90%;
   display: none;
   z-index: 100;
+  cursor: pointer;
 }
 
 .nav-background {
@@ -76,7 +77,20 @@ nav {
   margin-right: 20px;
   margin-top: -10px;
   display: none;
+  height: 30px;
+  width: 200px;
 }
+
+.Hotel{
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+/*********************  S I G N  U P ******************** */
+
+
 
 #Signup,
 #Login {
@@ -110,7 +124,18 @@ nav {
   height: 30px;
   font-size: large;
   border-radius: 3px;
+  position: relative;
+  top: -20px;
   border: 2px solid black;
+}
+
+.Cross{
+  width: 30px;
+  height: 30px;
+  float: right;
+  position: relative;
+  top: -190px;
+  cursor: pointer;
 }
 #username_signup,
 #password_signup,
@@ -125,7 +150,10 @@ nav {
   display: none;
 }
 
-/*  TRAVELLER SECTION */
+
+/*********************  TRAVELLER SECTION *********************/
+
+
 
 .TravellerGirl {
   position: absolute;
@@ -140,12 +168,28 @@ nav {
   background-position: top right;
   z-index: -1;
 }
+
+.plane1{
+  position: relative;
+  top: 45vh;
+  left: 52vw;
+}
+.plane2{
+  position: relative;
+  top: 20vh;
+  left: 75vw;
+  margin-right: 400px;
+  margin-top: 200px;
+}
 .Intro {
   padding: 10vh 15vw;
 }
 #Tab::after {
   content: "\a";
   white-space: pre;
+}
+.Traveller{
+  margin-top: -350px;
 }
 
 .PreHeading {
@@ -184,7 +228,6 @@ nav {
   font-size: 18px;
   font-family: Google Sans;
   font-weight: 500;
-  /* justify-content:space-evenly; */
   padding-top: 15px;
   text-align: center;
 }
@@ -196,11 +239,14 @@ nav {
   border: none;
   height: max-content;
   align-items: center;
-  /* justify-content:space-around; */
   cursor: pointer;
 }
 
-/*    S E R V I C E S */
+
+
+/*********************       S E R V I C E S       *********************/
+
+
 
 .Category {
   margin-top: 100px;
@@ -219,6 +265,19 @@ nav {
   font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 30px;
+}
+.Flights {
+  z-index: 20;
+}
+.Flight_Design {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 30px 0px 10px 0px;
+  background: #df6951;
+  position: relative;
+  left: 7%;
+  top: 85px;
 }
 
 .service {
@@ -265,7 +324,12 @@ div h5 {
   flex-shrink: 0;
 }
 
-/* D E S T I N A T I O N S */
+
+
+/*********************     D E S T I N A T I O N S      *********************/
+
+
+
 .Top_Selling {
   margin-top: 100px;
   color: var(--textclr, #5e6282);
@@ -283,6 +347,18 @@ div h5 {
   font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 30px;
+}
+
+.Europe{
+  z-index: 300;
+}
+
+.decor{
+position: relative;
+left: 1251px;
+top: -370px;
+z-index: -200;
+
 }
 .Countries {
   display: flex;
@@ -328,10 +404,12 @@ div h5 {
   flex-shrink: 0;
 }
 
-/*  N E X T    T R I P */
+
+/*********************      N E X T    T R I P        *********************/
+
 
 .Next_Trip {
-  margin-top: 100px;
+  margin-top: -120px;
   display: flex;
   flex-direction: row;
 }
@@ -369,8 +447,6 @@ div h5 {
   font-family: Poppins;
   font-style: normal;
   font-weight: 700;
-  /* line-height: 124.5%; */
-  /* display: flex; */
 }
 .Book h5 {
   color: var(--textclr, #5e6282);
@@ -379,10 +455,6 @@ div h5 {
   font-style: normal;
   font-weight: 400;
   text-align: start;
-  /* line-height: 124.5%; */
-  /* display: inline-flex; */
-  /* float: left; */
-  /* text-align: justify; */
 }
 .Cate {
   display: flex;
@@ -395,11 +467,7 @@ div h5 {
 .Reach {
   margin: 10px 5px;
 }
-/* 
-#space::after {
-  content: "\a";
-  white-space: pre;
-} */
+
 .tripGreece {
   float: right;
   width: 340px;
@@ -438,7 +506,6 @@ div h5 {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-
   letter-spacing: -0.08px;
 }
 .tripGreece h6 {
@@ -456,7 +523,6 @@ div h5 {
   border-radius: 18px;
   margin-left: 190px;
   margin-top: -70px;
-  /* background: var(--white, #fff); */
   background-color: white;
   opacity: 1;
   box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0),
@@ -467,7 +533,6 @@ div h5 {
     0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
 .triptoRome {
-  /* align-items:center; */
   justify-content: space-around;
   border-radius: 30px;
   margin-top: 40px;
@@ -475,7 +540,6 @@ div h5 {
 }
 .RomeContent {
   float: right;
-  /* align-self:safe; */
 }
 
 .tripRome h5 {
@@ -502,7 +566,12 @@ div h5 {
   letter-spacing: -0.77px;
 }
 
-/* T E S T I M O N I A L S */
+
+
+
+/*********************       T E S T I M O N I A L S      *********************/
+
+
 
 .PeopleTestimonials {
   position: relative;
@@ -513,9 +582,7 @@ div h5 {
 }
 
 .SayAboutUs {
-  /* float: left; */
   margin-right: 200px;
-  /* position: absolute; */
 }
 .SayAboutUs h3 {
   color: var(--textclr, #5e6282);
@@ -562,7 +629,6 @@ div h5 {
 #Person3 h2 {
   color: var(--textclr, #3b3166);
   font-size: 20px;
-  /* font-family: Poppins; */
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -602,11 +668,10 @@ div h5 {
 .photo {
   width: 68px;
   height: 68px;
-  flex-shrink: 0;
   border-radius: 35px;
 }
 
-/* A I R L I N E S */
+/*********************       A I R L I N E S        ********************  */
 
 #Airlines {
   display: flex;
@@ -617,32 +682,28 @@ div h5 {
 .airline {
   width: 130px;
   height: 100px;
-  flex-shrink: 0;
   cursor: pointer;
 }
 
-/* S U B S C R I B E */
+/*********************     S U B S C R I B E    *********************/
 
 .Subscribe {
   width: 1170px;
   height: 407px;
   flex-shrink: 0;
   border-radius: 120px 20px 120px 20px;
-  /* opacity: 0.20000000298023224; */
   background: var(--light-color, #f4f0ff);
   position: absolute;
-  margin: 100px 10%;
+  margin: 50px 10%;
 }
 
 .Subscribe h1 {
   color: var(--textclr, #5d69bd);
   text-align: center;
   font-size: 33px;
-  /* font-family: Poppins; */
   font-style: normal;
   font-weight: 600;
   line-height: 54px;
-  /* z-index: 100px; */
   margin-top: 50px;
 }
 .Email {
@@ -672,7 +733,6 @@ div h5 {
 }
 
 #email {
-  /* margin-top: 50px; */
   width: 421px;
   height: 68px;
   flex-shrink: 0;
@@ -681,7 +741,7 @@ div h5 {
   border: none;
 }
 
-/*   F O O T E R  */
+/*********************         F O O T E R    *********************/
 
 footer {
   margin-top: 800px;
@@ -771,7 +831,18 @@ footer h3 {
   font-size: medium;
 }
 
-/*   R E S P O N S I V E   D E S I G N */
+
+
+
+
+
+
+/* **************************************************************************************************** */
+/*********************     R E S P O N S I V E   D E S I G N      *********************/
+/* **************************************************************************************************** */
+
+
+
 
 @media screen and (max-width: 768px) {
   * {
@@ -811,7 +882,6 @@ footer h3 {
   }
   .logo {
     position: relative;
-    left: 25%;
   }
   .logoImg {
     width: 100%;
@@ -832,8 +902,29 @@ footer h3 {
   .nav-background {
     display: none;
   }
+  .Cross{
+    width: 30px;
+    height: 30px;
+    float: right;
+    position: relative;
+    top: -40px;
+    left: -40px;
+    cursor: pointer;
+  }
 
-  /* Traveller Intro */
+  #Nolang{
+   display: none;
+   background-color: transparent;
+   color: white;
+  }
+
+  
+  /*********************       Traveller Intro      *********************/
+
+
+  .plane1 ,.plane2{
+    display: none;
+  }
   .TravellerGirl {
     display: none;
   }
@@ -842,12 +933,15 @@ footer h3 {
     width: min-content;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
     width: 360px;
+    z-index: 2000;
   }
 
   #Tab::after {
     content: none;
+  }
+  .Traveller{
+    margin-top: 0px;
   }
 
   .Travell_Heading {
@@ -865,10 +959,16 @@ footer h3 {
     text-align: center;
   }
 
-  /* B E S T   S E R V I C E S */
+
+  /*********************     B E S T   S E R V I C E S      *********************/
+
+
   .service {
     display: flex;
     flex-direction: column;
+  }
+  .Flight_Design {
+    display: none;
   }
 
   .div {
@@ -878,7 +978,10 @@ footer h3 {
     margin-left: 30px;
   }
 
-  /*  T O P    D E S T I N A T I O N S */
+
+  /*********************  T O P    D E S T I N A T I O N S  *********************/
+
+
   .Countries {
     display: flex;
     flex-direction: column;
@@ -888,26 +991,29 @@ footer h3 {
   hr.new1 {
     border-top: 1px solid black;
   }
-  .City {
-    /* margin-left: 50px; */
-  }
+  
   .Top_Destinations {
     font-size: 40px;
     align-self: center;
     justify-content: center;
   }
+  .decor{
+    display: none;
+  }
 
-  /*  N E X T  T R I P */
+
+
+
+  /*********************     N E X T  T R I P    *********************/
+
+
+
   .Next_Trip {
-    /* margin-top: 500px; */
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
-    /* position: absolute; */
     align-items: center;
     justify-content: center;
-    /* width: 100px; */
-    /* left: 110%; */
-    /* height: max-content; */
     overflow-y: hidden;
   }
   .Cate h3 {
@@ -918,14 +1024,12 @@ footer h3 {
     margin-left: 10px;
     width: 100vw;
     height: max-content;
-    /* display: inline-flexbox; */
   }
   .tripGreece {
     display: none;
   }
 
   .PeopleTestimonials {
-    /* margin-top: 2300px; */
     display: flex;
     flex-direction: column;
     width: max-content;
@@ -935,13 +1039,10 @@ footer h3 {
   }
   .PeopleSay {
     align-items: start;
-    /* position: absolute; */
     float: left;
-    /* justify-content: space-between; */
     margin-left: -30%;
   }
   .SayAboutUs h3 {
-    /* margin-left: -110px; */
     text-align: center;
   }
   #Person1,
@@ -949,7 +1050,6 @@ footer h3 {
   #Person3 {
     display: block;
     height: max-content;
-    /* float:inline-start; */
     margin-bottom: 30px;
     align-self: center;
   }
@@ -969,7 +1069,8 @@ footer h3 {
     margin-top: -30px;
     text-align: center;
   }
-  #Person2 h2,#Person3 h2{
+  #Person2 h2,
+  #Person3 h2 {
     margin-top: -10px;
     text-align: center;
   }
@@ -980,7 +1081,6 @@ footer h3 {
   }
 
   .photo {
-    /* margin-left: -100px;*/
     width: 80px;
     height: 90px;
     text-align: center;
@@ -989,79 +1089,93 @@ footer h3 {
     display: none;
   }
 
-  /*  A I R L I N E S */
-  #Airlines{
+
+
+  /*********************      A I R L I N E S     *********************/
+
+
+
+  #Airlines {
     display: flex;
     flex-direction: column;
-    /* position: relative; */
-    /* float: inline-start; */
-    /* position: absolute; */
-    /* position:absolute; */
     margin-top: -100px;
     margin-left: 100px;
-
   }
-  .airline{
+  .airline {
     position: absolute;
-      /* display: inline-block; */
-      /* margin-top: 30px; */
-      height: auto;
+    height: auto;
   }
-  .airlin1{
+  .airlin1 {
     justify-content: space-around;
     margin-top: 100px;
   }
-  .airlin2{
+  .airlin2 {
     justify-content: space-around;
     margin-top: 80px;
   }
-  .airlin3{
+  .airlin3 {
     justify-content: space-around;
-     margin-top: 30px;
+    margin-top: 30px;
   }
-  .airlin4{
+  .airlin4 {
     justify-content: space-around;
-     margin-top: 110px;
+    margin-top: 110px;
   }
-  .airlin5{
+  .airlin5 {
     justify-content: space-around;
-     margin-top: 70px;
+    margin-top: 70px;
   }
 
-  /*  S U B S C R I B E  */
-  .Subscribe{
+
+
+  /*********************      S U B S C R I B E     *********************/
+
+
+  .Subscribe {
     margin-top: -20px;
-    max-width: fit-content;
-    height: 100vh;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    align-content: center;
-    align-self: center;
-  }
-  .Subscribe #email{
-    width: max-content;
-    align-items: center;
-    text-align: center;
+    width: 370px;
+    margin-left: 0px;
+    height: 80vh;
   }
 
-  footer{
-    background-color:#dbd3d3;
+  .Email{
+    margin-top: 80px;
+    position: absolute;
+    left: 0px;
+  }
+
+  footer {
+    margin-top: 600px;
+    background-color: #dbd3d3;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 0px;
-  }
-  .SocialMedia{
+    height: max-content;
+    }
+  .SocialMedia {
     margin-top: 20px;
   }
-  .RightsReserved{
-    margin-top: 10px;
-    /* height: 100px; */
-    background-color:#4b4848;
-    margin-bottom: 0px;
-    color: white;
-    
+  footer h1{
+    font-size: 70px;
+  }
+  footer h5{
+    font-size: 20px;
+  }
+  footer h2{
+    font-size: 30px;
+  }
+  footer h4{
+    font-size: 20px;
+  }
+  footer h3{
+    font-size: 25px
   }
 
+  .RightsReserved {
+    margin-top: 10px;
+    background-color: #4b4848;
+    margin-bottom: 0px;
+    color: white;
+  }
 }

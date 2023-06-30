@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jadoo - Travel Agency</title>
     <link rel="icon" href="/Images/Website Icon.png" />
-    <link rel="stylesheet" href="/Style.css" />
-
+    <!-- S C R I P T S -->
     <script src="/index.js"></script>
     <script src="/Email.js"></script>
+    <link rel="stylesheet" href="/Style.css" />
+    <!-- K E Y W O R D S  F O R    S E O -->
     <meta
       name="keywords"
       content="Jadoo,Travel Agency ,Tours and Travels, Flights ,Places to Travel,Bookings,Hotels "
     />
   </head>
-  <body>
+  <body onload="SignUp()">
+    <!-- **************************      S C R O L L   I C O N      ***********************************-->
     <div class="ScrollToTop">
       <img
         src="/Images/UpArrow.jpg"
@@ -23,8 +25,7 @@
         onclick="ScrollToTop()"
       />
     </div>
-    <!-- <img src="/Images/Traveller Image cream Background.png" class="travelBgImg alt=""> -->
-
+    <!--  **************************        N A V    B A R      *********************************** -->
     <nav>
       <div class="logo">
         <button id="Logo_Button" background-color: transparent;>
@@ -37,7 +38,7 @@
           <a
             href="https://www.travelandleisure.com/worlds-best/best-hotels-in-the-world-2022"
             target="_blank"
-            style="text-decoration: none"
+            class="Hotel"
             >Hotels</a
           >
         </li>
@@ -59,8 +60,10 @@
       <h3>More Languages<br />Coming Soon!</h3>
     </div>
     <div class="nav-background"></div>
+    <!-- **************************        SIGNUP LOGIN      ***********************************-->
     <div id="Login">
       <h1>Login</h1>
+      <img src="/Images/Exit.png" onclick="Exit()" alt="" class="Cross" />
       <br />
       <h4>Username</h4>
       <input type="text" placeholder="Username" id="username_login" />
@@ -73,6 +76,7 @@
     </div>
     <div id="Signup">
       <h1>SignUp</h1>
+      <img src="/Images/Exit.png" onclick="Exit()" alt="" class="Cross" />
       <br />
       <h4>Username</h4>
       <input type="text" placeholder="Username" id="username_signup" />
@@ -82,8 +86,14 @@
       <button id="Submit_Signup" onclick="Submit_Signup()">Submit</button>
     </div>
 
+    <!-- **************************        T R A V E L L E R      *********************************** -->
+
     <section class="Traveller">
       <div class="TravellerGirl"></div>
+      <div class="Plane">
+        <img src="/Images/Plane.png" alt="" class="plane1" />
+        <img src="/Images/Plane.png" alt="" class="plane2" />
+      </div>
       <div class="Intro">
         <h3 class="PreHeading">BEST DESTINATIONS AROUND THE WORLD</h3>
         <h1 class="Travell_Heading">
@@ -112,6 +122,8 @@
       </div>
     </section>
 
+    <!-- **************************         S E R V I C E S      *********************************** -->
+
     <section class="Services">
       <h3 class="Category">CATEGORY</h3>
       <h1 class="Best_Services">We Offer Best Services</h1>
@@ -126,6 +138,7 @@
           <h5>Calculated Weather</h5>
           <p>Built Wicket longer admire do barton vanity itself do in it.</p>
         </div>
+        <div class="Flight_Design"></div>
         <div class="div Flights">
           <img src="/Images/Flights Img.jpg" class="Services_Img" alt="" />
           <h5>Best Flights</h5>
@@ -150,6 +163,8 @@
         </div>
       </div>
     </section>
+
+    <!-- **************************         D E S T I N A T I O N S      *********************************** -->
 
     <section id="Destinations">
       <h3 class="Top_Selling">Top Selling</h3>
@@ -186,7 +201,12 @@
           <hr class="new1" />
         </div>
       </div>
+      <div class="Decor">
+        <img src="/Images/Decor Europe.png" alt="" class="decor" />
+      </div>
     </section>
+
+    <!-- **************************        N E X T   T R I P      *********************************** -->
 
     <section class="Next_Trip">
       <div class="Book">
@@ -245,6 +265,8 @@
       </div>
     </section>
 
+    <!-- **************************        T E S T I M O N I A L S      *********************************** -->
+
     <section class="PeopleTestimonials">
       <div class="SayAboutUs">
         <h3>TESTIMONIALS</h3>
@@ -292,6 +314,8 @@
       </div>
     </section>
 
+    <!-- **************************        A I R L I N E S      *********************************** -->
+
     <section id="Airlines">
       <div class="airlin1">
         <img src="/Images/Airlines 1.png" class="airline" alt="" />
@@ -309,6 +333,8 @@
         <img src="/Images/Airlines 5.png" class="airline" alt="" />
       </div>
     </section>
+
+    <!-- **************************        S U B S C R I B E      *********************************** -->
     <section class="Subscrive_Mailing">
       <div class="Subscribe">
         <h1>
@@ -321,8 +347,8 @@
         </div>
       </div>
     </section>
-    
-    
+
+    <!-- **************************       F O O T E R       ***********************************-->
     <footer>
       <div class="JadooLogo">
         <h1>Jadoo.</h1>
@@ -367,5 +393,3 @@
     </div>
   </body>
 </html>
-<!-- dhruvdeveloper2003@gmail.com -->
-<!-- DHRUVCHANDAK@2003 -->
