@@ -855,25 +855,10 @@ footer h3 {
   #ScrollTop {
     left: 85%;
   }
-
-  #Signup,
-  #Login {
-    display: none;
-    position: fixed;
-    padding: 6vh;
-    top: 50%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background-color: bisque;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 15px 0px;
-    font-size: larger;
-    background-image: none;
+  #Login,#Signup{
+    background-position: -100px;
   }
+
   .menu {
     flex-direction: column;
     position: relative;
@@ -907,8 +892,8 @@ footer h3 {
     height: 30px;
     float: right;
     position: relative;
-    top: -40px;
-    left: -40px;
+    top: -80px;
+    left: 15px;
     cursor: pointer;
   }
 
@@ -918,7 +903,7 @@ footer h3 {
    color: white;
   }
 
-  
+
   /*********************       Traveller Intro      *********************/
 
 
