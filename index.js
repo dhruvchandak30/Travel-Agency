@@ -54,9 +54,6 @@ function Submit_Signup() {
   localStorage.setItem("Password", password);
   document.getElementById("Signup").style.display = "none";
   document.getElementById("signup").style.display = "none";
-  setTimeout(function(){
-    Login();
-  },1000);
 }
 
 function Login() {

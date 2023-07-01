@@ -1014,8 +1014,6 @@ footer h3 {
     display: none;
   }
 
-  /* ******************   T E S T I M O N I A L S   ********************8 */
-
   .PeopleTestimonials {
     display: flex;
     flex-direction: column;
@@ -1132,7 +1130,7 @@ footer h3 {
   }
 
   footer {
-    margin-top: 670px;
+    margin-top: 600px;
     background-color: #dbd3d3;
     display: flex;
     flex-direction: column;
