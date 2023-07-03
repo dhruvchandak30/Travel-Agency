@@ -116,6 +116,7 @@ nav {
   font-size: 30px;
   letter-spacing: 3px;
   color: #181e4b;
+  z-index: 1000;
 }
 #Submit_Login,
 #Submit_Signup {
