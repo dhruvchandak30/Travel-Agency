@@ -128,6 +128,11 @@ nav {
   top: -20px;
   border: 2px solid black;
 }
+#Check{
+  width: 30vw;
+  transform: translate(50%,0%);
+  margin: -40px 0px 20px 0px;
+}
 
 .Cross{
   width: 30px;
@@ -763,6 +768,7 @@ footer h1 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  cursor: pointer;
 }
 footer h5 {
   color: var(--textclr, #5e6282);
@@ -771,6 +777,7 @@ footer h5 {
   font-style: normal;
   font-weight: 500;
   line-height: 124.5%;
+  cursor: pointer;
 }
 
 footer h2 {
@@ -781,6 +788,7 @@ footer h2 {
   font-weight: 700;
   line-height: 124.5%;
   padding-bottom: 20px;
+  cursor: pointer;
 }
 footer h4 {
   color: var(--textclr, #5e6282);
@@ -790,11 +798,13 @@ footer h4 {
   font-weight: 500;
   line-height: 124.5%;
   margin: 5px 0px;
+  cursor: pointer;
 }
 .social {
   width: 41px;
   height: 41px;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 footer h3 {
@@ -805,6 +815,7 @@ footer h3 {
   font-weight: 500;
   line-height: 124.5%;
   letter-spacing: 0.1px;
+  cursor: pointer;
 }
 
 .store {
@@ -812,6 +823,7 @@ footer h3 {
   height: 30px;
   flex-shrink: 0;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .RightsReserved {
@@ -902,6 +914,24 @@ footer h3 {
    background-color: transparent;
    color: white;
   }
+  #Signup h1{
+    margin-top: -50px;
+  }
+  #Signup h4{
+    margin-top: -30px;
+  }
+
+  #Check{
+    /* width: 30vw; */
+    width: min-content;
+    /* width: 160px; */
+    transform: translate(0%,50%);
+    margin: -110px 0px 20px 0px;
+  }
+  #Submit_Signup{
+    margin-top: 80px;
+  }
+  
 
 
   /*********************       Traveller Intro      *********************/
@@ -1130,7 +1160,7 @@ footer h3 {
   }
 
   footer {
-    margin-top: 600px;
+    margin-top: 680px;
     background-color: #dbd3d3;
     display: flex;
     flex-direction: column;

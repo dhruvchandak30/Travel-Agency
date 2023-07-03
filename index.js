@@ -2,25 +2,25 @@ function ScrollToTop() {
   scrollTo(0, 0);
 }
 // Scroll to Top Icon Visibilty
-window.addEventListener('scroll', function() {
-  var top = document.getElementById('ScrollTop');
+window.addEventListener("scroll", function () {
+  var top = document.getElementById("ScrollTop");
   var scrollTop = window.pageYOffset;
   if (scrollTop > 10) {
-    top.style.display = 'block';
+    top.style.display = "block";
   } else {
-    top.style.display = 'none';
+    top.style.display = "none";
   }
 });
 
 // Language Box
-function Languages(){
-  const width = window. innerWidth; 
-  if(width>700){
-  document.getElementById('Nolang').style.display="block";
-  setInterval(function(){
-    document.getElementById('Nolang').style.display="none";
-  },10000);
-}
+function Languages() {
+  const width = window.innerWidth;
+  if (width > 700) {
+    document.getElementById("Nolang").style.display = "block";
+    setInterval(function () {
+      document.getElementById("Nolang").style.display = "none";
+    }, 10000);
+  }
 }
 
 // Disable Scrolling
@@ -42,18 +42,52 @@ function SignUp() {
   disableScroll();
 }
 
-function Exit(){
+function Exit() {
   document.getElementById("Signup").style.display = "none";
   document.getElementById("Login").style.display = "none";
 }
 
 function Submit_Signup() {
-  let username = document.getElementById("username_signup").value;
-  let password = document.getElementById("password_signup").value;
-  localStorage.setItem("Name", username);
-  localStorage.setItem("Password", password);
-  document.getElementById("Signup").style.display = "none";
-  document.getElementById("signup").style.display = "none";
+  // var pass = /^[A-Za-z]\w{6,14}$/;
+  var username = document.getElementById("username_signup").value;
+  var password = document.getElementById("password_signup").value;
+  let p = password;
+  let a = 0,
+    b = 0,
+    c = 0,
+    d = 0;
+  if (password.length > 5) {
+    d++;
+  }
+
+  for (let i = 0; i < p.length; i++) {
+    let d = p[i];
+    let e = d.charCodeAt();
+    if (e > 64 && e < 91) {
+      c++;
+    }
+    if (e > 96 && e < 123) {
+      a++;
+    }
+    if (p[i] < 10 && p[i] >= 0) {
+      b++;
+    }
+  }
+  if (a > 0 && b > 0 && c > 0 && d > 0) {
+    localStorage.setItem("Name", username);
+    localStorage.setItem("Password", password);
+    document.getElementById("Signup").style.display = "none";
+    document.getElementById("signup").style.display = "none";
+    setTimeout(function () {
+      Login();
+    }, 1500);
+  } else {
+    let check = "";
+    check =
+      "Password Should be Greater than 5 characters,Contain both Upper and Lower Case and a Number";
+    document.getElementById("Check").innerHTML = check;
+    document.getElementById('password_signup').style.borderColor="red";
+  }
 }
 
 function Login() {
@@ -61,7 +95,6 @@ function Login() {
   document.getElementById("Signup").style.display = "none";
   disableScroll();
 }
-
 
 function Submit_Login() {
   let user = localStorage.getItem("Name");
@@ -98,8 +131,6 @@ function Flights_Scroll() {
   var y = position.top - 220;
   scrollTo(x, y);
 }
-
-
 
 // TESTIMONIALS
 let slide = 1;
@@ -140,4 +171,16 @@ function UpSlide() {
     Person2.style.display = "block";
     slide--;
   }
+}
+
+function Subscribe() {
+  let email = document.getElementById("email").value;
+  email = email.toLowerCase();
+  let ans = "";
+  if (email.includes("@gmail.com") || email.includes("@yahoo.com")) {
+    ans = "Email Sent";
+  } else {
+    ans = "Please Enter valid Email ID";
+  }
+  document.getElementById("EmailSent").innerText = ans;
 }

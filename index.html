@@ -84,13 +84,13 @@
     </div>
     <div id="Signup">
       <h1>SignUp</h1>
-      <img src="/Images/Exit.png" onclick="Exit()" alt="" class="Cross" />
       <br />
       <h4>Username</h4>
       <input type="text" placeholder="Username" id="username_signup" />
       <h4><br />Password</h4>
       <input type="password" placeholder="Password" id="password_signup" />
       <h5><br /></h5>
+      <h6 id="Check"></h6>
       <button id="Submit_Signup" onclick="Submit_Signup()">Submit</button>
     </div>
 
@@ -366,7 +366,8 @@
         </h1>
         <div class="Email">
           <input type="email" placeholder="Your Email" id="email" />
-          <button onclick="sendMail()" class="mail">SUBSCRIBE</button>
+          <button id="subscribeBtn" onclick="Subscribe()" class="mail">SUBSCRIBE</button>
+          <h4 id="EmailSent"></h4>
         </div>
       </div>
     </section>
