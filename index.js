@@ -86,7 +86,7 @@ function Submit_Signup() {
     check =
       "Password Should be Greater than 5 characters,Contain both Upper and Lower Case and a Number";
     document.getElementById("Check").innerHTML = check;
-    document.getElementById('password_signup').style.borderColor="red";
+    document.getElementById("password_signup").style.borderColor = "red";
   }
 }
 
@@ -96,6 +96,7 @@ function Login() {
   disableScroll();
 }
 
+var nameuser;
 function Submit_Login() {
   let user = localStorage.getItem("Name");
   let pass = localStorage.getItem("Password");
@@ -103,6 +104,7 @@ function Submit_Login() {
   let password = document.getElementById("password_login").value;
   if (user == username && pass == password) {
     document.getElementById("Login").style.display = "none";
+    nameuser = username;
     localStorage.removeItem("Name");
     localStorage.removeItem("Password");
     const s = document.getElementById("signup");
@@ -139,17 +141,32 @@ function DownSlide() {
   const Person1 = document.getElementById("Person1");
   const Person2 = document.getElementById("Person2");
   const Person3 = document.getElementById("Person3");
+
+  const dot_one = document.getElementById("dot_one");
+  const dot_two = document.getElementById("dot_two");
+  const dot_three = document.getElementById("dot_three");
+
   if (slide == 1) {
     Person1.style.display = "none";
     Person2.style.display = "block";
+    dot_one.style.backgroundColor = "transparent";
+    dot_two.style.backgroundColor = "grey";
+    dot_three.style.backgroundColor = "transparent";
+
     slide++;
   } else if (slide == 2) {
     Person2.style.display = "none";
     Person3.style.display = "block";
+    dot_one.style.backgroundColor = "transparent";
+    dot_two.style.backgroundColor = "transparent";
+    dot_three.style.backgroundColor = "grey";
     slide++;
   } else if (slide == 3) {
     Person3.style.display = "none";
     Person1.style.display = "block";
+    dot_one.style.backgroundColor = "grey";
+    dot_two.style.backgroundColor = "transparent";
+    dot_three.style.backgroundColor = "transparent";
     slide = 1;
   }
 }
@@ -158,29 +175,66 @@ function UpSlide() {
   const Person1 = document.getElementById("Person1");
   const Person2 = document.getElementById("Person2");
   const Person3 = document.getElementById("Person3");
+
+  const dot_one = document.getElementById("dot_one");
+  const dot_two = document.getElementById("dot_two");
+  const dot_three = document.getElementById("dot_three");
+
   if (slide == 1) {
     Person1.style.display = "none";
     Person3.style.display = "block";
+    dot_one.style.backgroundColor = "transparent";
+    dot_two.style.backgroundColor = "grey";
+    dot_three.style.backgroundColor = "transparent";
     slide = 3;
   } else if (slide == 2) {
     Person2.style.display = "none";
     Person1.style.display = "block";
+    dot_one.style.backgroundColor = "grey";
+    dot_two.style.backgroundColor = "transparent";
+    dot_three.style.backgroundColor = "transparent";
     slide--;
   } else if (slide == 3) {
     Person3.style.display = "none";
     Person2.style.display = "block";
+    dot_one.style.backgroundColor = "transparent";
+    dot_two.style.backgroundColor = "transparent";
+    dot_three.style.backgroundColor = "grey";
     slide--;
   }
 }
 
 function Subscribe() {
-  let email = document.getElementById("email").value;
-  email = email.toLowerCase();
+  let Number = document.getElementById("email").value;
+  let num = Number.toString();
   let ans = "";
-  if (email.includes("@gmail.com") || email.includes("@yahoo.com")) {
-    ans = "Email Sent";
+  if (num.length != 10) {
+    ans = "Please Enter Valid Mobile Number";
   } else {
-    ans = "Please Enter valid Email ID";
+    ans = "Message Sent";
+
+    const accountSid = "AC6b54f460bff09c54b7b69111ced35c7b";
+    const authToken = "d9a1fee9a112e544e21521b5bce80bf7";
+    const fromNumber = "+15737734730";
+    const toNumber = `+91${num}`;
+    const messageBody = `\nHey ${nameuser},\nThank you for Subscribing to Jadoo Travel Agency.\nWe will keep you updated with upcoming tours and travels.\n Thank You`;
+
+    fetch(
+      `https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+          Authorization: `Basic ${btoa(`${accountSid}:${authToken}`)}`,
+        },
+        body: `From=${encodeURIComponent(fromNumber)}&To=${encodeURIComponent(
+          toNumber
+        )}&Body=${encodeURIComponent(messageBody)}`,
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => console.log(data.sid))
+      .catch((error) => console.error(error));
   }
   document.getElementById("EmailSent").innerText = ans;
 }

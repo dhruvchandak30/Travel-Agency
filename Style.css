@@ -611,7 +611,8 @@ z-index: -200;
 }
 .Arrow {
   display: inline-block;
-  margin-left: 90px;
+  margin-left: 200px;
+  margin-top: -100px;
 }
 
 .Arrows {
@@ -675,6 +676,25 @@ z-index: -200;
   width: 68px;
   height: 68px;
   border-radius: 35px;
+}
+
+
+.dots{
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: transparent;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin: 15px 5px;
+  /* float: right; */
+}
+#dot_one{
+  background-color: gray;
 }
 
 /*********************       A I R L I N E S        ********************  */
@@ -1045,6 +1065,9 @@ footer h3 {
     display: none;
   }
 
+  /* ****************   TESTIMONIALS   *********** */
+
+
   .PeopleTestimonials {
     display: flex;
     flex-direction: column;
@@ -1103,6 +1126,10 @@ footer h3 {
   }
   .Arrow {
     display: none;
+  }
+
+  .Dots{
+    display: none ;
   }
 
 
