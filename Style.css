@@ -81,16 +81,12 @@ nav {
   width: 200px;
 }
 
-.Hotel{
+.Hotel {
   text-decoration: none;
   color: #000;
 }
 
-
-
 /*********************  S I G N  U P ******************** */
-
-
 
 #Signup,
 #Login {
@@ -129,13 +125,13 @@ nav {
   top: -20px;
   border: 2px solid black;
 }
-#Check{
+#Check {
   width: 30vw;
-  transform: translate(50%,0%);
+  transform: translate(50%, 0%);
   margin: -40px 0px 20px 0px;
 }
 
-.Cross{
+.Cross {
   width: 30px;
   height: 30px;
   float: right;
@@ -156,10 +152,7 @@ nav {
   display: none;
 }
 
-
 /*********************  TRAVELLER SECTION *********************/
-
-
 
 .TravellerGirl {
   position: absolute;
@@ -175,12 +168,12 @@ nav {
   z-index: -1;
 }
 
-.plane1{
+.plane1 {
   position: relative;
   top: 45vh;
   left: 52vw;
 }
-.plane2{
+.plane2 {
   position: relative;
   top: 20vh;
   left: 75vw;
@@ -194,7 +187,7 @@ nav {
   content: "\a";
   white-space: pre;
 }
-.Traveller{
+.Traveller {
   margin-top: -350px;
 }
 
@@ -248,11 +241,7 @@ nav {
   cursor: pointer;
 }
 
-
-
 /*********************       S E R V I C E S       *********************/
-
-
 
 .Category {
   margin-top: 100px;
@@ -330,11 +319,7 @@ div h5 {
   flex-shrink: 0;
 }
 
-
-
 /*********************     D E S T I N A T I O N S      *********************/
-
-
 
 .Top_Selling {
   margin-top: 100px;
@@ -355,16 +340,15 @@ div h5 {
   margin-bottom: 30px;
 }
 
-.Europe{
+.Europe {
   z-index: 300;
 }
 
-.decor{
-position: relative;
-left: 1251px;
-top: -370px;
-z-index: -200;
-
+.decor {
+  position: relative;
+  left: 1251px;
+  top: -370px;
+  z-index: -200;
 }
 .Countries {
   display: flex;
@@ -410,9 +394,7 @@ z-index: -200;
   flex-shrink: 0;
 }
 
-
 /*********************      N E X T    T R I P        *********************/
-
 
 .Next_Trip {
   margin-top: -120px;
@@ -572,12 +554,7 @@ z-index: -200;
   letter-spacing: -0.77px;
 }
 
-
-
-
 /*********************       T E S T I M O N I A L S      *********************/
-
-
 
 .PeopleTestimonials {
   position: relative;
@@ -678,8 +655,7 @@ z-index: -200;
   border-radius: 35px;
 }
 
-
-.dots{
+.dots {
   height: 20px;
   width: 20px;
   background-color: transparent;
@@ -693,7 +669,7 @@ z-index: -200;
   margin: 15px 5px;
   /* float: right; */
 }
-#dot_one{
+#dot_one {
   background-color: gray;
 }
 
@@ -864,18 +840,9 @@ footer h3 {
   font-size: medium;
 }
 
-
-
-
-
-
-
 /* **************************************************************************************************** */
 /*********************     R E S P O N S I V E   D E S I G N      *********************/
 /* **************************************************************************************************** */
-
-
-
 
 @media screen and (max-width: 768px) {
   * {
@@ -888,7 +855,8 @@ footer h3 {
   #ScrollTop {
     left: 85%;
   }
-  #Login,#Signup{
+  #Login,
+  #Signup {
     background-position: -100px;
   }
 
@@ -920,7 +888,7 @@ footer h3 {
   .nav-background {
     display: none;
   }
-  .Cross{
+  .Cross {
     width: 30px;
     height: 30px;
     float: right;
@@ -930,35 +898,33 @@ footer h3 {
     cursor: pointer;
   }
 
-  #Nolang{
-   display: none;
-   background-color: transparent;
-   color: white;
+  #Nolang {
+    display: none;
+    background-color: transparent;
+    color: white;
   }
-  #Signup h1{
+  #Signup h1 {
     margin-top: -50px;
   }
-  #Signup h4{
+  #Signup h4 {
     margin-top: -30px;
   }
 
-  #Check{
+  #Check {
     /* width: 30vw; */
     width: min-content;
     /* width: 160px; */
-    transform: translate(0%,50%);
+    transform: translate(0%, 50%);
     margin: -110px 0px 20px 0px;
   }
-  #Submit_Signup{
+  #Submit_Signup {
     margin-top: 80px;
   }
-  
-
 
   /*********************       Traveller Intro      *********************/
 
-
-  .plane1 ,.plane2{
+  .plane1,
+  .plane2 {
     display: none;
   }
   .TravellerGirl {
@@ -976,7 +942,7 @@ footer h3 {
   #Tab::after {
     content: none;
   }
-  .Traveller{
+  .Traveller {
     margin-top: 0px;
   }
 
@@ -995,9 +961,7 @@ footer h3 {
     text-align: center;
   }
 
-
   /*********************     B E S T   S E R V I C E S      *********************/
-
 
   .service {
     display: flex;
@@ -1014,9 +978,7 @@ footer h3 {
     margin-left: 30px;
   }
 
-
   /*********************  T O P    D E S T I N A T I O N S  *********************/
-
 
   .Countries {
     display: flex;
@@ -1027,22 +989,17 @@ footer h3 {
   hr.new1 {
     border-top: 1px solid black;
   }
-  
+
   .Top_Destinations {
     font-size: 40px;
     align-self: center;
     justify-content: center;
   }
-  .decor{
+  .decor {
     display: none;
   }
 
-
-
-
   /*********************     N E X T  T R I P    *********************/
-
-
 
   .Next_Trip {
     margin-top: 100px;
@@ -1066,7 +1023,6 @@ footer h3 {
   }
 
   /* ****************   TESTIMONIALS   *********** */
-
 
   .PeopleTestimonials {
     display: flex;
@@ -1128,15 +1084,11 @@ footer h3 {
     display: none;
   }
 
-  .Dots{
-    display: none ;
+  .Dots {
+    display: none;
   }
 
-
-
   /*********************      A I R L I N E S     *********************/
-
-
 
   #Airlines {
     display: flex;
@@ -1169,50 +1121,48 @@ footer h3 {
     margin-top: 70px;
   }
 
-
-
   /*********************      S U B S C R I B E     *********************/
-
 
   .Subscribe {
     margin-top: -20px;
     width: 370px;
     margin-left: 0px;
     height: 80vh;
+    margin-bottom: 150px;
   }
 
-  .Email{
+  .Email {
     margin-top: 80px;
     position: absolute;
     left: 0px;
   }
 
   footer {
-    margin-top: 680px;
+    margin-top: 800px;
     background-color: #dbd3d3;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 0px;
     height: max-content;
-    }
+  }
   .SocialMedia {
     margin-top: 20px;
   }
-  footer h1{
+  footer h1 {
     font-size: 70px;
   }
-  footer h5{
+  footer h5 {
     font-size: 20px;
   }
-  footer h2{
+  footer h2 {
     font-size: 30px;
   }
-  footer h4{
+  footer h4 {
     font-size: 20px;
   }
-  footer h3{
-    font-size: 25px
+  footer h3 {
+    font-size: 25px;
   }
 
   .RightsReserved {

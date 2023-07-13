@@ -212,7 +212,7 @@ function Subscribe() {
     ans = "Please Enter Valid Mobile Number";
   } else {
     ans = "Message Sent";
-
+   
     const accountSid = "AC6b54f460bff09c54b7b69111ced35c7b";
     const authToken = "d9a1fee9a112e544e21521b5bce80bf7";
     const fromNumber = "+15737734730";
